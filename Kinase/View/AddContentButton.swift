@@ -13,6 +13,7 @@ class AddContentButton: UIButton {
         super.init(frame: frame)
         
         self.setTitle("+", for: .normal)
+        setTitleColor(.systemBlue, for: .normal)
         layer.borderColor = UIColor.systemBlue.cgColor
         layer.borderWidth = 1
     }
