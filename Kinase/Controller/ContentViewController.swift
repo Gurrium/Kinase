@@ -35,15 +35,15 @@ class ContentViewController: UIViewController, ContentDataPassingDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        historyTableView.dataSource = self
+        contentsTableView.dataSource = self
         setupViews()
     }
     
     func setupViews() {
-        view.addSubview(historyTableView)
-        historyTableView.tableFooterView = historyTableFooterView
-        historyTableView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor)
-        historyTableView.register(HistoryTableViewCell.self, forCellReuseIdentifier: "history")
+        view.addSubview(contentsTableView)
+        contentsTableView.tableFooterView = contentsTableFooterView
+        contentsTableView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor)
+        contentsTableView.register(ContentsTableViewCell.self, forCellReuseIdentifier: "content")
         
         view.addSubview(addContentButton)
         addContentButton.anchor(top: nil, leading: nil, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 20, right: 40), size: .init(width: view.frame.width / 5, height: view.frame.width / 5))
@@ -95,8 +95,8 @@ extension ContentViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "history", for: indexPath) as? HistoryTableViewCell else {
-            return HistoryTableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "content", for: indexPath) as? ContentsTableViewCell else {
+            return ContentsTableViewCell()
         }
         if indexPath.row == 0 {
             cell.backgroundColor = .green
