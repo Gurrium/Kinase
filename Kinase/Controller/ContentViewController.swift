@@ -9,13 +9,17 @@
 import UIKit
 
 class ContentViewController: UIViewController, ContentDataPassingDelegate {
-    var items: [Item] = []
+    var items: [Item] = [] {
+        didSet {
+            contentsTableView.reloadData()
+        }
+    }
     
-    let historyTableFooterView: UITableViewHeaderFooterView = {
+    let contentsTableFooterView: UITableViewHeaderFooterView = {
         let footerView = UITableViewHeaderFooterView(frame: .zero)
         return footerView
     }()
-    let historyTableView: UITableView = {
+    let contentsTableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
         return tableView
     }()
@@ -74,7 +78,6 @@ class ContentViewController: UIViewController, ContentDataPassingDelegate {
             let secondRatio = Float(second.price) / second.net
             return firstRatio < secondRatio
         })
-        historyTableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
