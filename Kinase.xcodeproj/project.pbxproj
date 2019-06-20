@@ -14,7 +14,8 @@
 		BBAD08C222A94E000038D342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBAD08C122A94E000038D342 /* Assets.xcassets */; };
 		BBAD08CE22A966B00038D342 /* UIViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD08CD22A966B00038D342 /* UIViewHelper.swift */; };
 		BBAD08D222A96A100038D342 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD08D122A96A100038D342 /* HistoryTableViewCell.swift */; };
-		BBAD08D422AA371E0038D342 /* HistoryTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD08D322AA371E0038D342 /* HistoryTableFooterView.swift */; };
+		BBC0C05F22AFF19100CE89D6 /* AddContentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC0C05E22AFF19100CE89D6 /* AddContentButton.swift */; };
+		BBC0C06122AFFC9100CE89D6 /* UIColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC0C06022AFFC9100CE89D6 /* UIColorHelper.swift */; };
 		BBE1215822AFE2CC009D6DEA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE1215722AFE2CC009D6DEA /* Item.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +29,8 @@
 		BBAD08C622A94E000038D342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBAD08CD22A966B00038D342 /* UIViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewHelper.swift; sourceTree = "<group>"; };
 		BBAD08D122A96A100038D342 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
-		BBAD08D322AA371E0038D342 /* HistoryTableFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableFooterView.swift; sourceTree = "<group>"; };
+		BBC0C05E22AFF19100CE89D6 /* AddContentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContentButton.swift; sourceTree = "<group>"; };
+		BBC0C06022AFFC9100CE89D6 /* UIColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHelper.swift; sourceTree = "<group>"; };
 		BBE1215722AFE2CC009D6DEA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				BBAD08CD22A966B00038D342 /* UIViewHelper.swift */,
+				BBC0C06022AFFC9100CE89D6 /* UIColorHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -93,8 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				BBAD08D122A96A100038D342 /* HistoryTableViewCell.swift */,
-				BBAD08D322AA371E0038D342 /* HistoryTableFooterView.swift */,
 				BB11BC8522AC32E200B64DDB /* InputContentKeyboardToolBar.swift */,
+				BBC0C05E22AFF19100CE89D6 /* AddContentButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -135,11 +138,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Taira Kaneko";
 				TargetAttributes = {
 					BBAD08B622A94E000038D342 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -179,9 +183,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBAD08BD22A94E000038D342 /* ContentViewController.swift in Sources */,
+				BBC0C05F22AFF19100CE89D6 /* AddContentButton.swift in Sources */,
 				BB11BC8422AC171700B64DDB /* AddNewContentViewController.swift in Sources */,
+				BBC0C06122AFFC9100CE89D6 /* UIColorHelper.swift in Sources */,
 				BBAD08D222A96A100038D342 /* HistoryTableViewCell.swift in Sources */,
-				BBAD08D422AA371E0038D342 /* HistoryTableFooterView.swift in Sources */,
 				BBE1215822AFE2CC009D6DEA /* Item.swift in Sources */,
 				BBAD08BB22A94E000038D342 /* AppDelegate.swift in Sources */,
 				BB11BC8622AC32E200B64DDB /* InputContentKeyboardToolBar.swift in Sources */,
@@ -206,6 +211,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -213,6 +219,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -263,6 +270,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -270,6 +278,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -310,7 +319,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = taira.Kinase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -326,7 +335,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = taira.Kinase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
