@@ -8,8 +8,8 @@
 
 import UIKit
 
-class HistoryTableViewCell: UITableViewCell {
-    var price: Int = 0{
+class ContentsTableViewCell: UITableViewCell {
+    var price: Int = 0 {
         didSet {
             updateLabel()
         }
