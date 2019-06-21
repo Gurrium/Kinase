@@ -10,13 +10,11 @@
 		B607D8F7C1870E8B4ACDBFB9 /* Pods_Kinase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F3748FCBEB4DDC920F3B5C /* Pods_Kinase.framework */; };
 		BB11BC8422AC171700B64DDB /* AddNewContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB11BC8322AC171700B64DDB /* AddNewContentViewController.swift */; };
 		BB11BC8622AC32E200B64DDB /* InputContentKeyboardToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB11BC8522AC32E200B64DDB /* InputContentKeyboardToolBar.swift */; };
-		BB2484E222BBB6ED00F74F63 /* ClearAllContentsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2484E122BBB6ED00F74F63 /* ClearAllContentsButton.swift */; };
 		BB2484E422BBBDAC00F74F63 /* ContentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2484E322BBBDAC00F74F63 /* ContentsTableViewCell.swift */; };
 		BBAD08BB22A94E000038D342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD08BA22A94E000038D342 /* AppDelegate.swift */; };
 		BBAD08BD22A94E000038D342 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD08BC22A94E000038D342 /* ContentViewController.swift */; };
 		BBAD08C222A94E000038D342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBAD08C122A94E000038D342 /* Assets.xcassets */; };
 		BBAD08CE22A966B00038D342 /* UIViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD08CD22A966B00038D342 /* UIViewHelper.swift */; };
-		BBC0C05F22AFF19100CE89D6 /* AddContentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC0C05E22AFF19100CE89D6 /* AddContentButton.swift */; };
 		BBC0C06122AFFC9100CE89D6 /* UIColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC0C06022AFFC9100CE89D6 /* UIColorHelper.swift */; };
 		BBE1215822AFE2CC009D6DEA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE1215722AFE2CC009D6DEA /* Item.swift */; };
 /* End PBXBuildFile section */
@@ -25,7 +23,6 @@
 		AA70CFCAA11D59B2C23DFB41 /* Pods-Kinase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kinase.release.xcconfig"; path = "Target Support Files/Pods-Kinase/Pods-Kinase.release.xcconfig"; sourceTree = "<group>"; };
 		BB11BC8322AC171700B64DDB /* AddNewContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContentViewController.swift; sourceTree = "<group>"; };
 		BB11BC8522AC32E200B64DDB /* InputContentKeyboardToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputContentKeyboardToolBar.swift; sourceTree = "<group>"; };
-		BB2484E122BBB6ED00F74F63 /* ClearAllContentsButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClearAllContentsButton.swift; sourceTree = "<group>"; };
 		BB2484E322BBBDAC00F74F63 /* ContentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsTableViewCell.swift; sourceTree = "<group>"; };
 		BBAD08B722A94E000038D342 /* Kinase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kinase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAD08BA22A94E000038D342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +30,6 @@
 		BBAD08C122A94E000038D342 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBAD08C622A94E000038D342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBAD08CD22A966B00038D342 /* UIViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewHelper.swift; sourceTree = "<group>"; };
-		BBC0C05E22AFF19100CE89D6 /* AddContentButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContentButton.swift; sourceTree = "<group>"; };
 		BBC0C06022AFFC9100CE89D6 /* UIColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHelper.swift; sourceTree = "<group>"; };
 		BBE1215722AFE2CC009D6DEA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		F328E0DFC57B6081088F4C79 /* Pods-Kinase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kinase.debug.xcconfig"; path = "Target Support Files/Pods-Kinase/Pods-Kinase.debug.xcconfig"; sourceTree = "<group>"; };
@@ -58,7 +54,6 @@
 				F328E0DFC57B6081088F4C79 /* Pods-Kinase.debug.xcconfig */,
 				AA70CFCAA11D59B2C23DFB41 /* Pods-Kinase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -124,8 +119,6 @@
 			children = (
 				BB11BC8522AC32E200B64DDB /* InputContentKeyboardToolBar.swift */,
 				BB2484E322BBBDAC00F74F63 /* ContentsTableViewCell.swift */,
-				BBC0C05E22AFF19100CE89D6 /* AddContentButton.swift */,
-				BB2484E122BBB6ED00F74F63 /* ClearAllContentsButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -256,10 +249,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBAD08BD22A94E000038D342 /* ContentViewController.swift in Sources */,
-				BBC0C05F22AFF19100CE89D6 /* AddContentButton.swift in Sources */,
 				BB11BC8422AC171700B64DDB /* AddNewContentViewController.swift in Sources */,
 				BBC0C06122AFFC9100CE89D6 /* UIColorHelper.swift in Sources */,
-				BB2484E222BBB6ED00F74F63 /* ClearAllContentsButton.swift in Sources */,
 				BBE1215822AFE2CC009D6DEA /* Item.swift in Sources */,
 				BBAD08BB22A94E000038D342 /* AppDelegate.swift in Sources */,
 				BB2484E422BBBDAC00F74F63 /* ContentsTableViewCell.swift in Sources */,
