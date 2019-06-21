@@ -98,9 +98,6 @@ extension ContentViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "content", for: indexPath) as? ContentsTableViewCell else {
             return ContentsTableViewCell()
         }
-        if indexPath.row == 0 {
-            cell.backgroundColor = .green
-        }
         let item = items[indexPath.item]
         cell.price = item.price
         cell.net = item.net
