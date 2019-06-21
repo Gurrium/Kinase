@@ -21,6 +21,7 @@ class ContentViewController: UIViewController, ContentDataPassingDelegate {
     }()
     let contentsTableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
+        tableView.separatorStyle = .none
         return tableView
     }()
     let addContentButton: AddContentButton = {
