@@ -43,7 +43,6 @@ class ContentViewController: UIViewController, ContentDataPassingDelegate {
     }()
     let controlButtonsContainer: UIView = {
         let view = UIView(frame: .zero)
-        view.sizeToFit()
         return view
     }()
     
@@ -67,7 +66,7 @@ class ContentViewController: UIViewController, ContentDataPassingDelegate {
         let buttonRadius = view.bounds.width / 5
         
         view.addSubview(controlButtonsContainer)
-        controlButtonsContainer.anchor(top: nil, leading: nil, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: view.bounds.width / 15), size: .init(width: buttonRadius, height: buttonRadius * 2.1))
+        controlButtonsContainer.anchor(top: nil, leading: nil, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.safeAreaLayoutGuide.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: view.bounds.width / 15), size: .init(width: buttonRadius, height: buttonRadius * 2.1))
         
         controlButtonsContainer.addSubview(addContentButton)
         addContentButton.anchor(top: nil, leading: controlButtonsContainer.leadingAnchor, bottom: controlButtonsContainer.bottomAnchor, trailing: controlButtonsContainer.trailingAnchor, size: .init(width: buttonRadius, height: buttonRadius))
