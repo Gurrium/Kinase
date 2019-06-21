@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftIconFont
 
 class ContentViewController: UIViewController, ContentDataPassingDelegate {
     var items: [Item] = [] {
@@ -21,15 +22,28 @@ class ContentViewController: UIViewController, ContentDataPassingDelegate {
     }()
     let contentsTableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
+        tableView.separatorStyle = .none
         return tableView
     }()
-    let addContentButton: AddContentButton = {
-        let button = AddContentButton(type: .system)
+    let addContentButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.titleLabel?.font = UIFont.icon(from: .fontAwesome, ofSize: 34.0)
+        button.setTitle(String.fontAwesomeIcon("plus"), for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .init(hexString: "3d6cb9")
         return button
     }()
-    let clearAllContentsButton: ClearAllContentsButton = {
-        let button = ClearAllContentsButton(type: .system)
+    let clearAllContentsButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.titleLabel?.font = UIFont.icon(from: .fontAwesome, ofSize: 34.0)
+        button.setTitle(String.fontAwesomeIcon("bomb"), for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .init(hexString: "e43a19")
         return button
+    }()
+    let controlButtonsContainer: UIView = {
+        let view = UIView(frame: .zero)
+        return view
     }()
     
     override func viewDidLoad() {
@@ -45,18 +59,24 @@ class ContentViewController: UIViewController, ContentDataPassingDelegate {
         contentsTableView.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor)
         contentsTableView.register(ContentsTableViewCell.self, forCellReuseIdentifier: "content")
         
-        view.addSubview(addContentButton)
-        addContentButton.anchor(top: nil, leading: nil, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 20, right: 40), size: .init(width: view.frame.width / 5, height: view.frame.width / 5))
-        addContentButton.layer.cornerRadius = 0.5 * addContentButton.constraints[0].constant
-        let buttonFontSize = addContentButton.constraints[1].constant * 0.8
-        addContentButton.titleLabel?.font = UIFont.systemFont(ofSize: buttonFontSize, weight: .light)
+        setupButtons()
+    }
+    
+    fileprivate func setupButtons() {
+        let buttonRadius = view.bounds.width / 5
+        
+        view.addSubview(controlButtonsContainer)
+        controlButtonsContainer.anchor(top: nil, leading: nil, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.safeAreaLayoutGuide.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: view.bounds.width / 15), size: .init(width: buttonRadius, height: buttonRadius * 2.1))
+        
+        controlButtonsContainer.addSubview(addContentButton)
+        addContentButton.anchor(top: nil, leading: controlButtonsContainer.leadingAnchor, bottom: controlButtonsContainer.bottomAnchor, trailing: controlButtonsContainer.trailingAnchor, size: .init(width: buttonRadius, height: buttonRadius))
+        addContentButton.layer.cornerRadius = buttonRadius * 0.5
         let addContentRecognizer = UITapGestureRecognizer(target: self, action: #selector(addButtonTapped(_:)))
         addContentButton.addGestureRecognizer(addContentRecognizer)
-        
-        view.addSubview(clearAllContentsButton)
-        clearAllContentsButton.anchor(top: nil, leading: nil, bottom: addContentButton.topAnchor, trailing: view.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 20, right: 40), size: .init(width: view.frame.width / 5, height: view.frame.width / 5))
-        clearAllContentsButton.layer.cornerRadius = 0.5 * clearAllContentsButton.constraints[0].constant
-        clearAllContentsButton.titleLabel?.font = UIFont.systemFont(ofSize: buttonFontSize, weight: .light)
+
+        controlButtonsContainer.addSubview(clearAllContentsButton)
+        clearAllContentsButton.anchor(top: controlButtonsContainer.topAnchor, leading: controlButtonsContainer.leadingAnchor, bottom: nil, trailing: controlButtonsContainer.trailingAnchor, size: .init(width: buttonRadius, height: buttonRadius))
+        clearAllContentsButton.layer.cornerRadius = buttonRadius * 0.5
         let clearAllContentsRecognizer = UITapGestureRecognizer(target: self, action: #selector(clearAllContentsButtonTapped(_:)))
         clearAllContentsButton.addGestureRecognizer(clearAllContentsRecognizer)
     }
@@ -97,9 +117,6 @@ extension ContentViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "content", for: indexPath) as? ContentsTableViewCell else {
             return ContentsTableViewCell()
-        }
-        if indexPath.row == 0 {
-            cell.backgroundColor = .green
         }
         let item = items[indexPath.item]
         cell.price = item.price
