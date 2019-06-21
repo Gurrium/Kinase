@@ -7,15 +7,14 @@
 //
 
 import UIKit
+import SwiftIconFont
 
 class ClearAllContentsButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
 
-        self.setTitle("x", for: .normal)
-        setTitleColor(.red, for: .normal)
-        layer.borderColor = UIColor.red.cgColor
-        layer.borderWidth = 1
+        setTitle(String.fontAwesomeIcon("bomb"), for: .normal)
+        setTitleColor(.white, for: .normal)
     }
 
     required init?(coder aDecoder: NSCoder) {

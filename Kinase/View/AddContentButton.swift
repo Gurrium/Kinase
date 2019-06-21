@@ -12,10 +12,8 @@ class AddContentButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.setTitle("+", for: .normal)
-        setTitleColor(.systemBlue, for: .normal)
-        layer.borderColor = UIColor.systemBlue.cgColor
-        layer.borderWidth = 1
+        setTitle(String.fontAwesomeIcon("plus"), for: .normal)
+        setTitleColor(.white, for: .normal)
     }
     
     required init?(coder aDecoder: NSCoder) {

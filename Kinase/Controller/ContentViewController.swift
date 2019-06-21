@@ -49,15 +49,15 @@ class ContentViewController: UIViewController, ContentDataPassingDelegate {
         view.addSubview(addContentButton)
         addContentButton.anchor(top: nil, leading: nil, bottom: view.safeAreaLayoutGuide.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 20, right: 40), size: .init(width: view.frame.width / 5, height: view.frame.width / 5))
         addContentButton.layer.cornerRadius = 0.5 * addContentButton.constraints[0].constant
-        let buttonFontSize = addContentButton.constraints[1].constant * 0.8
-        addContentButton.titleLabel?.font = UIFont.systemFont(ofSize: buttonFontSize, weight: .light)
+        let buttonFontSize = addContentButton.constraints[1].constant * 0.5
+        addContentButton.titleLabel?.font = UIFont.icon(from: .fontAwesome, ofSize: buttonFontSize)
         let addContentRecognizer = UITapGestureRecognizer(target: self, action: #selector(addButtonTapped(_:)))
         addContentButton.addGestureRecognizer(addContentRecognizer)
         
         view.addSubview(clearAllContentsButton)
         clearAllContentsButton.anchor(top: nil, leading: nil, bottom: addContentButton.topAnchor, trailing: view.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 20, right: 40), size: .init(width: view.frame.width / 5, height: view.frame.width / 5))
         clearAllContentsButton.layer.cornerRadius = 0.5 * clearAllContentsButton.constraints[0].constant
-        clearAllContentsButton.titleLabel?.font = UIFont.systemFont(ofSize: buttonFontSize, weight: .light)
+        clearAllContentsButton.titleLabel?.font = UIFont.icon(from: .fontAwesome, ofSize: buttonFontSize)
         let clearAllContentsRecognizer = UITapGestureRecognizer(target: self, action: #selector(clearAllContentsButtonTapped(_:)))
         clearAllContentsButton.addGestureRecognizer(clearAllContentsRecognizer)
     }
