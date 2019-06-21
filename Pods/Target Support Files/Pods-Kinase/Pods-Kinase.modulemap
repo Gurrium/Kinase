@@ -1,0 +1,6 @@
+framework module Pods_Kinase {
+  umbrella header "Pods-Kinase-umbrella.h"
+
+  export *
+  module * { export * }
+}
