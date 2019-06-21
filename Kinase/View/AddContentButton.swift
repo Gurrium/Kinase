@@ -14,6 +14,7 @@ class AddContentButton: UIButton {
         
         setTitle(String.fontAwesomeIcon("plus"), for: .normal)
         setTitleColor(.white, for: .normal)
+        backgroundColor = .init(hexString: "3d6cb9")
     }
     
     required init?(coder aDecoder: NSCoder) {

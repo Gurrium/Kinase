@@ -15,6 +15,7 @@ class ClearAllContentsButton: UIButton {
 
         setTitle(String.fontAwesomeIcon("bomb"), for: .normal)
         setTitleColor(.white, for: .normal)
+        backgroundColor = .init(hexString: "e43a19")
     }
 
     required init?(coder aDecoder: NSCoder) {
