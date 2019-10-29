@@ -41,6 +41,11 @@ class ContentViewController: UIViewController, ContentDataPassingDelegate {
         button.backgroundColor = .init(hexString: "e43a19")
         return button
     }()
+//    let shoppingListButton: UIButton = {
+//        let button = UIButton(type: .custom)
+//        button.setImage(UIImage(from: .fontAwesome, code: "list", size: .init(width: 30, height: 30)), for: .normal)
+//        return button
+//    }()
     let controlButtonsContainer: UIView = {
         let view = UIView(frame: .zero)
         return view
@@ -79,6 +84,9 @@ class ContentViewController: UIViewController, ContentDataPassingDelegate {
         clearAllContentsButton.layer.cornerRadius = buttonRadius * 0.5
         let clearAllContentsRecognizer = UITapGestureRecognizer(target: self, action: #selector(clearAllContentsButtonTapped(_:)))
         clearAllContentsButton.addGestureRecognizer(clearAllContentsRecognizer)
+//
+//        view.addSubview(shoppingListButton)
+//        shoppingListButton.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: nil, bottom: nil, trailing: view.safeAreaLayoutGuide.trailingAnchor, padding: .init(top: 10, left: 0, bottom: 0, right: 20))
     }
     
     @objc func addButtonTapped(_ sender: UIView) {

@@ -11,6 +11,7 @@
 		BB11BC8422AC171700B64DDB /* AddNewContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB11BC8322AC171700B64DDB /* AddNewContentViewController.swift */; };
 		BB11BC8622AC32E200B64DDB /* InputContentKeyboardToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB11BC8522AC32E200B64DDB /* InputContentKeyboardToolBar.swift */; };
 		BB2484E422BBBDAC00F74F63 /* ContentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2484E322BBBDAC00F74F63 /* ContentsTableViewCell.swift */; };
+		BB7AD65E22C26DD5007FF43E /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7AD65D22C26DD5007FF43E /* ShoppingListViewController.swift */; };
 		BBAD08BB22A94E000038D342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD08BA22A94E000038D342 /* AppDelegate.swift */; };
 		BBAD08BD22A94E000038D342 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD08BC22A94E000038D342 /* ContentViewController.swift */; };
 		BBAD08C222A94E000038D342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBAD08C122A94E000038D342 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		BB11BC8322AC171700B64DDB /* AddNewContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContentViewController.swift; sourceTree = "<group>"; };
 		BB11BC8522AC32E200B64DDB /* InputContentKeyboardToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputContentKeyboardToolBar.swift; sourceTree = "<group>"; };
 		BB2484E322BBBDAC00F74F63 /* ContentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsTableViewCell.swift; sourceTree = "<group>"; };
+		BB7AD65D22C26DD5007FF43E /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
 		BBAD08B722A94E000038D342 /* Kinase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kinase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAD08BA22A94E000038D342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBAD08BC22A94E000038D342 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				BBAD08BC22A94E000038D342 /* ContentViewController.swift */,
 				BB11BC8322AC171700B64DDB /* AddNewContentViewController.swift */,
+				BB7AD65D22C26DD5007FF43E /* ShoppingListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				BBC0C06122AFFC9100CE89D6 /* UIColorHelper.swift in Sources */,
 				BBE1215822AFE2CC009D6DEA /* Item.swift in Sources */,
 				BBAD08BB22A94E000038D342 /* AppDelegate.swift in Sources */,
+				BB7AD65E22C26DD5007FF43E /* ShoppingListViewController.swift in Sources */,
 				BB2484E422BBBDAC00F74F63 /* ContentsTableViewCell.swift in Sources */,
 				BB11BC8622AC32E200B64DDB /* InputContentKeyboardToolBar.swift in Sources */,
 				BBAD08CE22A966B00038D342 /* UIViewHelper.swift in Sources */,

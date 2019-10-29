@@ -14,6 +14,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+//        let contentViewControllerIcon = UITabBarItem()
+//        contentViewControllerIcon.image = UIImage.icon(from: .fontAwesome, iconColor: .systemBlue, code: "yen", imageSize: .init(width: 40, height: 30), ofSize: 30)
+//        let contentViewController = ContentViewController()
+//        contentViewController.tabBarItem = contentViewControllerIcon
+//
+//        let shoppingListViewControllerIcon = UITabBarItem()
+//        shoppingListViewControllerIcon.image = UIImage.icon(from: .fontAwesome, iconColor: .systemBlue, code: "list", imageSize: .init(width: 25, height: 25), ofSize: 25)
+//        let shoppingListViewController = ShoppingListViewController()
+//        shoppingListViewController.tabBarItem = shoppingListViewControllerIcon
+//
+//        let tabBarController = UITabBarController()
+//        tabBarController.tabBar.tintColor = .systemBlue
+//        tabBarController.setViewControllers([contentViewController, shoppingListViewController], animated: false)
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = ContentViewController()
         window?.makeKeyAndVisible()
