@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Kinase.xcodeproj">
+      location = "self:Tenbin.xcodeproj">
    </FileRef>
 </Workspace>

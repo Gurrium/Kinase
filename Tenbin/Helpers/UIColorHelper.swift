@@ -1,6 +1,6 @@
 //
 //  UIColorHelper.swift
-//  Kinase
+//  Tanbin
 //
 //  Created by Taira Kaneko on 2019/06/12.
 //  Copyright © 2019 Taira Kaneko. All rights reserved.
@@ -16,11 +16,11 @@ extension UIColor {
     convenience init(hexString: String, alpha: CGFloat = 1.0) {
         let hexString: String = hexString.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         let scanner = Scanner(string: hexString)
-        if (hexString.hasPrefix("#")) {
-            scanner.scanLocation = 1
-        }
-        var color: UInt32 = 0
-        scanner.scanHexInt32(&color)
+        scanner.charactersToBeSkipped = CharacterSet(charactersIn: "#")
+        
+        var color: UInt64 = 0
+        scanner.scanHexInt64(&color)
+        
         let mask = 0x000000FF
         let r = Int(color >> 16) & mask
         let g = Int(color >> 8) & mask

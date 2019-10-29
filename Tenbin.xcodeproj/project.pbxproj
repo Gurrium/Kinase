@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B607D8F7C1870E8B4ACDBFB9 /* Pods_Kinase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9F3748FCBEB4DDC920F3B5C /* Pods_Kinase.framework */; };
 		BB11BC8422AC171700B64DDB /* AddNewContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB11BC8322AC171700B64DDB /* AddNewContentViewController.swift */; };
 		BB11BC8622AC32E200B64DDB /* InputContentKeyboardToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB11BC8522AC32E200B64DDB /* InputContentKeyboardToolBar.swift */; };
 		BB2484E422BBBDAC00F74F63 /* ContentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2484E322BBBDAC00F74F63 /* ContentsTableViewCell.swift */; };
@@ -17,14 +16,16 @@
 		BBAD08CE22A966B00038D342 /* UIViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD08CD22A966B00038D342 /* UIViewHelper.swift */; };
 		BBC0C06122AFFC9100CE89D6 /* UIColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC0C06022AFFC9100CE89D6 /* UIColorHelper.swift */; };
 		BBE1215822AFE2CC009D6DEA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE1215722AFE2CC009D6DEA /* Item.swift */; };
+		DF546D586859E5A0D0C97BA8 /* Pods_Tenbin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91AAF9C3598FBB1D8A68E0DE /* Pods_Tenbin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AA70CFCAA11D59B2C23DFB41 /* Pods-Kinase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kinase.release.xcconfig"; path = "Target Support Files/Pods-Kinase/Pods-Kinase.release.xcconfig"; sourceTree = "<group>"; };
+		0E3581B121F3F7302B24F075 /* Pods-Tenbin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tenbin.release.xcconfig"; path = "Target Support Files/Pods-Tenbin/Pods-Tenbin.release.xcconfig"; sourceTree = "<group>"; };
+		91AAF9C3598FBB1D8A68E0DE /* Pods_Tenbin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tenbin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB11BC8322AC171700B64DDB /* AddNewContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewContentViewController.swift; sourceTree = "<group>"; };
 		BB11BC8522AC32E200B64DDB /* InputContentKeyboardToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputContentKeyboardToolBar.swift; sourceTree = "<group>"; };
 		BB2484E322BBBDAC00F74F63 /* ContentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsTableViewCell.swift; sourceTree = "<group>"; };
-		BBAD08B722A94E000038D342 /* Kinase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kinase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBAD08B722A94E000038D342 /* Tenbin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tenbin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAD08BA22A94E000038D342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBAD08BC22A94E000038D342 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		BBAD08C122A94E000038D342 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,8 +33,7 @@
 		BBAD08CD22A966B00038D342 /* UIViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewHelper.swift; sourceTree = "<group>"; };
 		BBC0C06022AFFC9100CE89D6 /* UIColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHelper.swift; sourceTree = "<group>"; };
 		BBE1215722AFE2CC009D6DEA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		F328E0DFC57B6081088F4C79 /* Pods-Kinase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kinase.debug.xcconfig"; path = "Target Support Files/Pods-Kinase/Pods-Kinase.debug.xcconfig"; sourceTree = "<group>"; };
-		F9F3748FCBEB4DDC920F3B5C /* Pods_Kinase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kinase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4631B09AC748099E1B4E1F9 /* Pods-Tenbin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tenbin.debug.xcconfig"; path = "Target Support Files/Pods-Tenbin/Pods-Tenbin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B607D8F7C1870E8B4ACDBFB9 /* Pods_Kinase.framework in Frameworks */,
+				DF546D586859E5A0D0C97BA8 /* Pods_Tenbin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +51,8 @@
 		816B590CFA0F9AB5A7328C71 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F328E0DFC57B6081088F4C79 /* Pods-Kinase.debug.xcconfig */,
-				AA70CFCAA11D59B2C23DFB41 /* Pods-Kinase.release.xcconfig */,
+				E4631B09AC748099E1B4E1F9 /* Pods-Tenbin.debug.xcconfig */,
+				0E3581B121F3F7302B24F075 /* Pods-Tenbin.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -60,7 +60,7 @@
 		AC3D9E1C2209D58A3115FF34 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F9F3748FCBEB4DDC920F3B5C /* Pods_Kinase.framework */,
+				91AAF9C3598FBB1D8A68E0DE /* Pods_Tenbin.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -76,7 +76,7 @@
 		BBAD08AE22A94E000038D342 = {
 			isa = PBXGroup;
 			children = (
-				BBAD08B922A94E000038D342 /* Kinase */,
+				BBC48C9A235D6197003BBAB9 /* Tenbin */,
 				BBAD08B822A94E000038D342 /* Products */,
 				816B590CFA0F9AB5A7328C71 /* Pods */,
 				AC3D9E1C2209D58A3115FF34 /* Frameworks */,
@@ -86,23 +86,9 @@
 		BBAD08B822A94E000038D342 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BBAD08B722A94E000038D342 /* Kinase.app */,
+				BBAD08B722A94E000038D342 /* Tenbin.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		BBAD08B922A94E000038D342 /* Kinase */ = {
-			isa = PBXGroup;
-			children = (
-				BB11BC8722AFE28A00B64DDB /* Model */,
-				BBAD08BA22A94E000038D342 /* AppDelegate.swift */,
-				BBAD08CC22A9669B0038D342 /* Helpers */,
-				BBAD08D022A969A90038D342 /* Controller */,
-				BBAD08CF22A9699C0038D342 /* View */,
-				BBAD08C122A94E000038D342 /* Assets.xcassets */,
-				BBAD08C622A94E000038D342 /* Info.plist */,
-			);
-			path = Kinase;
 			sourceTree = "<group>";
 		};
 		BBAD08CC22A9669B0038D342 /* Helpers */ = {
@@ -132,26 +118,40 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		BBC48C9A235D6197003BBAB9 /* Tenbin */ = {
+			isa = PBXGroup;
+			children = (
+				BB11BC8722AFE28A00B64DDB /* Model */,
+				BBAD08BA22A94E000038D342 /* AppDelegate.swift */,
+				BBAD08CC22A9669B0038D342 /* Helpers */,
+				BBAD08D022A969A90038D342 /* Controller */,
+				BBAD08CF22A9699C0038D342 /* View */,
+				BBAD08C122A94E000038D342 /* Assets.xcassets */,
+				BBAD08C622A94E000038D342 /* Info.plist */,
+			);
+			path = Tenbin;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BBAD08B622A94E000038D342 /* Kinase */ = {
+		BBAD08B622A94E000038D342 /* Tenbin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BBAD08C922A94E000038D342 /* Build configuration list for PBXNativeTarget "Kinase" */;
+			buildConfigurationList = BBAD08C922A94E000038D342 /* Build configuration list for PBXNativeTarget "Tenbin" */;
 			buildPhases = (
 				2298F8AD0610B6865A819052 /* [CP] Check Pods Manifest.lock */,
 				BBAD08B322A94E000038D342 /* Sources */,
 				BBAD08B422A94E000038D342 /* Frameworks */,
 				BBAD08B522A94E000038D342 /* Resources */,
-				FE76BC2AE7B8E7E7B36B419E /* [CP] Embed Pods Frameworks */,
+				AD856EF9D8D8808083271360 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Kinase;
-			productName = Kinase;
-			productReference = BBAD08B722A94E000038D342 /* Kinase.app */;
+			name = Tenbin;
+			productName = Tenbin;
+			productReference = BBAD08B722A94E000038D342 /* Tenbin.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -171,7 +171,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BBAD08B222A94E000038D342 /* Build configuration list for PBXProject "Kinase" */;
+			buildConfigurationList = BBAD08B222A94E000038D342 /* Build configuration list for PBXProject "Tenbin" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -184,7 +184,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BBAD08B622A94E000038D342 /* Kinase */,
+				BBAD08B622A94E000038D342 /* Tenbin */,
 			);
 		};
 /* End PBXProject section */
@@ -216,20 +216,20 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Kinase-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Tenbin-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FE76BC2AE7B8E7E7B36B419E /* [CP] Embed Pods Frameworks */ = {
+		AD856EF9D8D8808083271360 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Kinase/Pods-Kinase-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Tenbin/Pods-Tenbin-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SwiftIconFont/SwiftIconFont.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -238,7 +238,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kinase/Pods-Kinase-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tenbin/Pods-Tenbin-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -312,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -365,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -375,15 +375,15 @@
 		};
 		BBAD08CA22A94E000038D342 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F328E0DFC57B6081088F4C79 /* Pods-Kinase.debug.xcconfig */;
+			baseConfigurationReference = E4631B09AC748099E1B4E1F9 /* Pods-Tenbin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X3E9PQ9NR;
-				INFOPLIST_FILE = Kinase/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				INFOPLIST_FILE = Tenbin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = taira.Kinase;
+				PRODUCT_BUNDLE_IDENTIFIER = taira.Tenbin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -392,15 +392,15 @@
 		};
 		BBAD08CB22A94E000038D342 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA70CFCAA11D59B2C23DFB41 /* Pods-Kinase.release.xcconfig */;
+			baseConfigurationReference = 0E3581B121F3F7302B24F075 /* Pods-Tenbin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4X3E9PQ9NR;
-				INFOPLIST_FILE = Kinase/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				INFOPLIST_FILE = Tenbin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = taira.Kinase;
+				PRODUCT_BUNDLE_IDENTIFIER = taira.Tenbin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -410,7 +410,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BBAD08B222A94E000038D342 /* Build configuration list for PBXProject "Kinase" */ = {
+		BBAD08B222A94E000038D342 /* Build configuration list for PBXProject "Tenbin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BBAD08C722A94E000038D342 /* Debug */,
@@ -419,7 +419,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BBAD08C922A94E000038D342 /* Build configuration list for PBXNativeTarget "Kinase" */ = {
+		BBAD08C922A94E000038D342 /* Build configuration list for PBXNativeTarget "Tenbin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BBAD08CA22A94E000038D342 /* Debug */,

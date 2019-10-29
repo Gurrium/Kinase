@@ -1,7 +1,8 @@
-platform :ios, '11.1'
+platform :ios, '12.0'
 
-target 'Kinase' do
+target 'Tenbin' do
+  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'SwiftIconFont'
+  pod 'SwiftIconFont', '~> 3.0.0'
 end
